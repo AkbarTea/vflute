@@ -1,0 +1,209 @@
+* {
+	box-sizing: border-box;
+}
+ul {
+	margin: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex-direction: column; /* по умолчанию row */
+  /*border-style: solid;*/
+  border-color: red;
+  min-width: 1500px;
+}
+
+.container_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header,
+main,
+footer {
+  /*border-style: solid;*/
+}
+header {
+  background-color: #212121;
+  order: 1;
+  min-height: 10vh;
+  /*border-color: green;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header > form > input{
+	order: 2;
+}
+
+.logo {
+  margin-left: 10px; 
+}
+
+main {
+  order: 2;
+  min-height: 80vh;
+  /*border-color: yellow;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #212121;
+  order: 3;
+  min-height: 10vh;
+  /*border-color: blue;*/
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.button,
+.rating_button,
+.shared_button {
+    background-color: #D77600; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover,
+.rating_button:hover,
+.shared_button:hover {
+    background-color: #f41136; 
+}
+
+input.shared_button {
+  background-color: #222222;
+  max-width: 105px;
+}
+input.shared_button:hover {
+  background-color: #222222;
+}
+
+.disabled_button {
+  background-color: grey;
+}
+.disabled_button:hover {
+  background-color: grey;
+}
+
+.disabled_button[name="track_rating_up"] {
+  background-color: green;
+}
+.disabled_button:hover {
+  background-color: green;
+}
+
+.disabled_button[name="track_rating_down"] {
+  background-color: red;
+}
+.disabled_button:hover {
+  background-color: red;
+}
+
+.rating_button {
+  /*font-size: 25px;*/
+  /*padding: 10px 32px;*/
+ /* background-color: #D77600; 
+  border: none;
+  color: white;
+  padding: 5px 32px;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;*/
+}
+
+.navbutton {
+  text-transform: uppercase;
+}
+
+.ctrlbutton {
+  min-width: 175px;
+}
+
+
+
+input.button:hover {
+	background-color: #f41136;
+}
+
+form {
+	padding: 0;
+	margin: 0;
+}
+h3.title {
+	background-color: #212121;
+	color: #f2f2f2;
+	padding-bottom: 10px;
+}
+h3, h1 {
+  color: #f2f2f2;
+}
+
+.track_wrapper {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.track_title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.track_player {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.track_info {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+
+.track_info > div {
+  text-align: center;
+}
+
+.player_audio {
+  display: inline-flex;
+  align-items: center;
+  border-style: solid;
+  border-color: #474747;
+  background-color: #474747;
+}
+
+.player_rating {
+  /*display: flex;*/
+  /*flex-direction: column;*/
+}
+
